@@ -1,13 +1,13 @@
-#trained for real-time via webcam
-#train for images
+# trained for real-time via webcam
+# train for images
 
-#train on py touch
+# train on py touch
 yolo task=detect mode=train model=yolo11n.pt data=#pathto yaml epochs=20 imgsz=640
 
-#run test on pt
+# run test on pt
 yolo task=detect mode=predict model=runs/detect/train10/weights/best.pt source=g.jpg
 
-#convert pt to onnx
+# convert pt to onnx
 yolo export model=best.pt format=onnx  # creates 'yolo11n.onnx'
 
 best.onnx => 
