@@ -1,0 +1,8 @@
+path : D:/coding/das/p_dataSource/run_traning/lay  # Use absolute path with forward slashes
+train : obj_train_data
+val : obj_train_data
+
+
+names : 
+  0 : lay
+  1 : lactasoy
